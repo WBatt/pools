@@ -1,0 +1,304 @@
+/*TOP MENU BAR*/
+.topbar {
+  background-color: #666;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 7em;
+}
+.ulTopBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.liTopBar a {
+  color: #17BEBB;
+  display: block;
+  text-align: center;
+
+}
+.liTopBar a:hover{
+  background-color: #AAA;
+  text-decoration: none;
+  color: white;
+}
+
+/*MAIN SECTION*/
+.home {
+  position: relative;
+  height: 65em;
+}
+.homeContent{
+  position: absolute;
+  width: 100%;
+  height: 40em;
+  margin-top: 7em;
+  z-index: 1;
+}
+.title {
+  font-size: 7em;
+}
+.tint{
+  content: "";
+  position: absolute;
+  background-color: #17BEBB;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.pic{
+  background: url("pool.jpg") no-repeat center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+/*HOME PAGE LINKS*/
+.ulHomePageLinks {
+  list-style: none;
+}
+.liHomePageLink {
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+.liHomePageLink a {
+  display: inline-block;
+}
+
+
+
+
+
+/*ABOUT ME SECTION */
+.aboutMe {
+  color: black;
+  position: relative;
+  background-color: #FFF;
+}
+.aboutMeContents {
+  padding: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+
+/*SERVICES SECTION */
+.projectLinks {
+  padding: 40px;
+  position: relative;
+  color: white;
+  background-color: #17BEBB;
+
+}
+.ulProjectLinks {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+.liProject {
+  display: inline-block;
+  padding: 70px 0;
+  margin: 20px;
+}
+.liProject a {
+  color: white;
+  padding: 70px 70px;
+  border-color: #FFF;
+  border-radius: 5px;
+  background-color: #666;
+}
+.liProject a:hover {
+  background-color: #AAA;
+  text-decoration: none;
+  color: white;
+}
+
+/*CONTACT SECTION*/
+.contact {
+  background-color: white;
+  color: #17BEBB;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+form{
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+input[type=text]{
+  color: black;
+  width: 40em;
+  height: 3em;
+  margin: 18px 0;
+  text-align: left;
+  border-radius: 5px;
+}
+.message {
+  color: black;
+  width: 40em;
+  height: 10em;
+  margin: 18px 0;
+  border-radius: 5px;
+  resize: none;
+}
+.btn-submit{
+  position: relative;
+  background-color: #666;
+  border-radius: 5px;
+  float: left;
+  padding: 1em;
+}
+
+
+/*FOOTER*/
+.footer{
+  background-color: #666;
+  height: 10%;
+}
+
+
+.btnForm{
+  width: 500px;
+  margin: auto;
+}
+
+
+
+
+
+hr{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.floatRight{
+  float: right;
+}
+.floatRight a{
+  padding: 2.8em 1em 2.8em 1em;
+}
+.floatLeft{
+  float: left;
+  font-size: 2.5em;
+}
+.floatLeft a{
+  padding-top: .8em;
+  padding-bottom: .6em;
+}
+
+.marginLeft{
+  margin-left: 15%;
+}
+.marginRight{
+  margin-right: 15%;
+}
+.body{
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+
+.headerHeight{
+    height: 3em;
+}
+.headerFont{
+  font-size: 2em;
+}
+
+
+
+.menu-button{
+    float: right;
+    margin-right: 2em;
+    margin-top: 1.9em;
+    height: 2em;
+}
+.menu-button:before {
+    content: "";
+    float: right;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 3em;
+    height: .5em;
+    background: #17BEBB;
+    box-shadow: 
+      0 .75em 0 0 #17BEBB,
+      0 1.5em 0 0 #17BEBB,
+      0 2.25em 0 0 #17BEBB;
+}
+
+.menu-button-content{
+  display: none;
+    background-color: #7a7a7a;
+    min-width: auto;
+    box-shadow: 0.25em 0.25em 0.5em .1em black;
+    border-radius: 5px;
+    padding-left: .25em;
+    padding-right: .25em;
+    z-index: 1;
+}
+.menu-button:hover .menu-button-content {
+    display: block;
+}
+
+.drop-down-list{
+  
+}
+
+@media screen and (max-width:768px){
+  #about{
+    display: none;
+  }
+  #contact{
+    display: none;
+  }
+  #portfolio{
+    display: none;
+  }
+  .aboutMeContents {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  input[type=text]{
+    width: 17em;
+  }
+  
+  .message {
+    width: 17em;
+    height: 9em;
+  }
+  
+  
+  
+}
+
+@media screen and (min-width:769px){
+  .menu-button{
+    display: none;
+  }
+}
+
+
+.caller {
+  background-color: #AAA;
+  font-size: 2em;
+  bottom: 0;
+  right: 0;
+  margin: 2em;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-radius: .5em;
+  padding: .5em;
+  position: fixed;
+  z-index: 2;
+}

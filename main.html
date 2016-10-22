@@ -1,0 +1,103 @@
+<!--Links for fonts-->
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="main.js"></script>
+</head>
+
+<div class="body">
+  
+  <div class="caller">Call Us: (###) ###-#### </div>
+<!--Top nav bar-->
+<div class="topbar">
+  <ul class="ulTopBar">
+    <li class="liTopBar floatLeft marginLeft"><a href="#Home">HOME</a></li>
+    <li class="liTopBar floatRight marginRight" id="contact"><a href="#Contact">Contact</a></li>
+    <li class="liTopBar floatRight" id="portfolio"><a href="#Portfolio">Services</a></li>
+    <li class="liTopBar floatRight" id="about"><a href="#About">About</a></li>
+    
+    <div class = "menu-button">
+				<div class = "menu-button-content">
+					<ul class = "dropdown-list">
+            <li id="mContact"><a href="#Contact">Contact</a></li>
+            <li id="mPortfolio"><a href="#Portfolio">Services</a></li>
+            <li id="mAbout"><a href="#About">About</a></li>
+					</ul>
+				</div>
+		</div>
+    
+  </ul>
+</div>
+
+<!--Home page-->
+<a id="Home"></a>
+<!--Link to this section-->
+<div class="home">
+  <div class="tint"></div>
+  <div class="homeContent">
+    <div class="title">Lorem Ipsum</div>
+    <div class = "pic" ></div>
+    <hr></hr>
+  </div>
+</div>
+
+<!--About page-->
+<a id="About"></a>
+<!--Link to this section-->
+<div class="aboutMe">
+  <div class="aboutMeContents">
+    <h1 style="font-size:50px">About Us</h1>
+    <p style="font-size:18px">Lorem ipsum dolor sit amet, nec harum timeam aperiri et, vim et nostrum definiebas, at mea latine maluisset. 
+                              Sea cu tacimates consetetur, vim possit everti epicurei id, ex pro nihil diceret dolores. Ea mel ludus delectus, 
+                              facilis rationibus contentiones ut eum. Est ne quas ponderum efficiantur. Alia audiam equidem eam id, an quaeque 
+                              ceteros sapientem est. Id legere commodo inimicus eum, eos postulant vituperatoribus ad, quis vide docendi has id. 
+                              Mutat omnium saperet quo id, te est novum noster ocurreret.</p>
+  </div>
+</div>
+
+
+<!--Portfolio page-->
+<a id="Portfolio" style="text-decoration: none"></a>
+<!--Link to this section-->
+<div class="projectLinks">
+  <h1>Services</h1>
+    <ul class="ulProjectLinks">
+      <li class="liProject"><a href="">service1</a></li>
+      <li class="liProject"><a href="">service2</a></li>
+      <li class="liProject"><a href="">service3</a></li>
+    </ul>
+</div>
+
+<!--Contact page-->
+<a id="Contact" style="text-decoration: none"></a>
+<!--Link to this section-->
+<div class="contact">
+  <h1>Contact Us:</h1>
+  <form name="contact_form" method="post" action="contact-form-handler.php">
+    <input type="text" name="name" placeholder=" Name"/>
+    <input type="text" name="email" placeholder=" Email"/>
+    <textarea wrap="soft" name="message" class="message" placeholder=" Message..."></textarea>
+    <div class="btnForm">
+      <input type="submit" value="Submit" class="btn-submit"/>
+    </div>
+  </form>
+</div>
+
+
+
+  <div class="footer">
+    
+    
+  </div>
+</div>
+<script language="JavaScript">
+  var frmvalidator  = new Validator("contactform");
+  frmvalidator.addValidation("name","req","Please provide your name");
+  frmvalidator.addValidation("email","req","Please provide your email");
+  frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
