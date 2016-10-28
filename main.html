@@ -1,17 +1,16 @@
 <!--Links for fonts-->
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
 	<script type="text/javascript" src="main.js"></script>
 </head>
 
 <div class="body">
   
-  <div class="caller">Call Us: (###) ###-#### </div>
+  <div class="caller"><div class="btnClose" onclick="closePhone()">X</div>Call Us: (###) ###-#### </div>
+  <div class="phone" onclick="openPhone()"></div>
 <!--Top nav bar-->
 <div class="topbar">
   <ul class="ulTopBar">
@@ -98,6 +97,5 @@
   var frmvalidator  = new Validator("contactform");
   frmvalidator.addValidation("name","req","Please provide your name");
   frmvalidator.addValidation("email","req","Please provide your email");
-  frmvalidator.addValidation("email","email",
-  "Please enter a valid email address");
+  frmvalidator.addValidation("email","email","Please enter a valid email address");
 </script>
